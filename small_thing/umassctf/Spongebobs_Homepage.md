@@ -29,7 +29,7 @@ Thay vì nhập 1 giá trị bình thường ví dụ như 300x494, hãy thử t
 
 bin/sh ư, có vẻ như là 1 lệnh hệ thống, command injection riel, nhưng có vẻ đã bị filter bởi 1 dấu !, vậy hãy thêm 1 dấu ; vào sau, giả sử như 300x494;ls; thì ta có
 
-![Screenshot (345)](https://github.com/ductohno/ctf_wup/assets/152991010/d61205b0-319c-46f9-a2ac-f1bd29d30e8d)
+![Screenshot (347)](https://github.com/ductohno/ctf_wup/assets/152991010/c3d7787b-5566-4417-9ae8-9c66506eeeb6)
 
 Vậy là đã rõ, sửa ls thành cat flag.txt mà lấy flag thôi
 
