@@ -41,4 +41,6 @@ Cách khác: có thể thử dán: ls%20%3E%262%3Bpp ( tương đương là ls >
 
 ![Screenshot (349)](https://github.com/ductohno/ctf_wup/assets/152991010/71f1405e-2a67-4dcd-b921-508e0fe55bc2)
 
+Thêm lệnh >&2 cho phép ta điều hướng ouput ra màn hình chính
+
 
