@@ -37,3 +37,8 @@ Vậy là đã rõ, sửa ls thành cat flag.txt mà lấy flag thôi
 
 Flag là: UMASS{B4S1C_CMD_INJ3CTI0N}
 
+Cách khác: có thể thử dán: ls%20%3E%262%3Bpp ( tương đương là ls >%2;pp ) => nó sẽ hiện đáp án ko cần f12
+
+![Screenshot (349)](https://github.com/ductohno/ctf_wup/assets/152991010/71f1405e-2a67-4dcd-b921-508e0fe55bc2)
+
+
