@@ -68,7 +68,7 @@ function fil($str)
 ### Nhiệm vụ:
    - Dựa vào đoạn code trên, chúng ta có thể hoàn toàn kiểm soát 2 parameter username và password. Nhiệm vụ của chúng ta là thay đổi 2 parameter này để đổi thuộc tính isAdmin thành true, thì ta sẽ có flag.
 # Khai thác:
-  ## Hướng khai thác:
+  **Hướng khai thác**:
    -  Trước tiên ta sẽ test thử, khi nhập username và password ngẫu nhiên thì ta nhận được thông báo Invalid credentials vì thuộc tính isAdmin vẫn bằng False.
       ![Screenshot 2024-10-14 084809](https://github.com/user-attachments/assets/62364644-4fd1-43f0-8212-a25f74d835ca)
 
