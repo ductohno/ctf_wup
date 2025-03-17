@@ -57,3 +57,17 @@ Giờ thì buff cho opponent thôi
 ![image](https://github.com/user-attachments/assets/145f081d-5c22-4054-9b99-51fff94ab4a5)
 
 Here we go, bây giờ ta chỉ việc bruteforce kinh độ với vĩ độ thôi
+
+Sau khi hồi bruteforce chán chê, mình đã tìm được gần như là chính xác tọa độ cần tìm
+
+![image](https://github.com/user-attachments/assets/507b9cc3-f0d9-4e05-ac78-a4530db21748)
+
+Đây là tọa độ trên gg map:
+
+https://www.google.com/maps/place/39%C2%B056'25.4%22N+82%C2%B059'48.1%22W/@39.9404133,-82.99695,21z/data=!4m5!3m4!4b1!8m2!3d39.9403889!4d-82.9966944?hl=vi-VN&entry=ttu&g_ep=EgoyMDI1MDMxMi4wIKXMDSoASAFQAw%3D%3D
+
+
+Từ đó ta có flag là
+
+# Flag:
+utflag{1059-s-high-st-columbus-43206}
