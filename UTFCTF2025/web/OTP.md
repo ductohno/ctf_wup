@@ -21,7 +21,7 @@ Do `_` rất bé nên ta sẽ không vác đi so sánh mà thay vô cho hợp t�
 
 ### Script:
 
-```
+```py
 import aiohttp
 import asyncio
 from bs4 import BeautifulSoup
