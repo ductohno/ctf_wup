@@ -196,6 +196,4 @@ if __name__ == "__main__":
 Do bài còn là case-sensitive, nên ta phải thử viết hoa từng chữ 1 nữa. Cuối cùng, những chữ cần viết hoa là O, T, P
 
 # Flag:
-```
-utflag{On3_sT3P_4t_4_t1m3}
-```
+`utflag{On3_sT3P_4t_4_t1m3}`
