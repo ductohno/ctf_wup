@@ -32,4 +32,28 @@ Tiếp theo, nhìn vào `/battle`, ta thấy rằng mình hoàn toàn có thể 
 Khi dùng match, server sẽ hiển thị ra khoảng cách giữa mình và đối thủ bao xa, dựa trên kinh độ và vĩ độ mình nhập. Do đó, ta hoàn toàn có thể bruteforce ra vị trí chính xác của 1 user nào đó mà ta muốn.
 
 ### Idea: 
-Bằng cách nào đó lên được gần 3000 
+Dựa vào ý tưởng trên, lên được 3000 điểm, sau đó bruteforce địa điểm của người chơi geopy để ra kinh độ, vĩ độ. Tìm kiếm trên google map và nhập flag.
+
+# Exploit
+
+Trước tiên ta chọn 1 người chơi gen ra từ `/register`:
+
+![image](https://github.com/user-attachments/assets/dd08e0e1-32e3-4762-a51c-dc504cfab3e7)
+
+Tiếp theo chọn 1 đối thủ:
+
+![image](https://github.com/user-attachments/assets/4316fa60-dbbb-42d1-9c01-c42b546733a2)
+
+Như đã nói, ta sẽ thua và luôn tụt elo:
+
+![image](https://github.com/user-attachments/assets/0132b09f-f603-4967-85ed-060f0234e71b)
+
+Giờ thì buff cho opponent thôi
+
+![image](https://github.com/user-attachments/assets/87a1bb7a-1e2b-4b5c-9e60-0890a1b686ca)
+
+Đối thủ đã được cộng thêm 1000 elo, cứ làm như thế cho đến khi ta tìm được người chơi geopy
+
+![image](https://github.com/user-attachments/assets/145f081d-5c22-4054-9b99-51fff94ab4a5)
+
+Here we go, bây giờ ta chỉ việc bruteforce kinh độ với vĩ độ thôi
