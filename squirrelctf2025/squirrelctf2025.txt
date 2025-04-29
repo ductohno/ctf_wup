@@ -1,0 +1,15 @@
+squirrel ctf:
+
+web 1:
+-9 in /api/click:
+Flag: squ1rrel{1nc0rr3ct_d3s3r1al1zat10n?_1n_MY_m0ng0?}
+
+web 2:
+bcrypt.hasspw chỉ lấy đến 72 byte
+salt chiếm 70 byte, vậy chỉ cần bruteforce 2 byte nữa là ra flag, thử lần lượt password từ 0 đến 99
+Flag: squ1rrel{turns_out_the_emojis_werent_that_useful_after_all}
+
+web3:
+Go ko phân biệt hoa thường, nhưng python thì có:
+Payload: {"action": "getflag", "Action":"getgopher"}
+Flag: squ1rrel{p4rs3r?_1_h4rd1y_kn0w_3r!}
