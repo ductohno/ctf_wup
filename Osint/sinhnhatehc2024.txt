@@ -1,0 +1,28 @@
+https://vn.linkedin.com/in/ehc2122017
+vo day ta co: 
+- My secret: RUhDe0hhcHB5QjFydGhkNHlf tuc la
+- EHC{HappyB1rthd4y_
+chuan huong r
+xem phan contact ta co them thong tin: https://github.com/3hcb1rthd4y
+- manh mối 1: Siuuuuuuuuu
+- The spell must be use in the place same to my avatar: có thể là gmail, và email đó có tồn tại
+- Ở commit 1f6a9df, có 1 ảnh màn hình xanh với 1 mã qr khả nghi, cũng như ở December 9th.md có hint là có QR quanh đây, nên ta quét qr và có nội dung sau:
+How can you get here??? Is my username suspicious???: ehcbirthday
+It is spell: Siuuuuuuuuu
+The spell must be use in the place same to my avatar
+Is that github template but it seems similar to something???
+dựa vào commit m7 ta đoán dc gmail là sinhnhatehc@gmail.com
+nhập nội dung với title là cái spell ở trên ta có 1 đống link youtube, so sánh kí tự cuối cùng và ta có gợi ý calendar
+vào calendar:https://calendar.google.com/calendar/u/0/embed?src=sinhnhatehc@gmail.com
+ rồi kéo đến 2.12 ta có link discord: https://www.google.com/url?q=https://discord.gg/4A9kCEwZTQ
+vô link thì ta có ngay 1 link rick cmn roll
+
+trong lúc đang tìm kiếm, đột nhiên tôi copy ảnh ở phần annoucement và thấy dòng chữ copy văn bản???, tôi quyết định cóp hử xem có gì không và bùm, Secret: RUhDXw==
+EHC_ 
+vậy part 2 là: EHC_
+tiếp theo vẫn xài thủ thuật như thế ta tìm được tin nhắn: DM me the secret password >:3c ở phần /get_fake_flag
+dm con bot thôi
+Sau 1 hồi chả đâu vào đâu thì tôi nhìn thấy có 1 kênh voice rất khả nghi, thứ mà thường gần như không 1 bài discord nào sẽ có, đó là: sinh nhat ehc la 02/12, do đó tôi quyết định thử ngày tháng năm sinh nhật, từ 02/12/2017, 02/12, December 2nd, 02122017, ...
+Và kết quả đúng là 0212
+lastpart: _O2l2@!!}
+The flag: EHC{HappyB1rthd4y_EHC__O2l2@!!}

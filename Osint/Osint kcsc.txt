@@ -1,0 +1,14 @@
+Osint kcsc:
+Các dữ kiện:
+- longnguyen511074 => 1 vài thứ sau:
+	+ link pinterest: https://www.pinterest.com/longnguyen511074/ (khả nghi do chỉ có 1 người theo dõi và 4 bài đăng)
+	+ link facebook: https://www.facebook.com/longnguyen511074/ => 1 bức ảnh, có vẻ như là ở việt nam. => quán hadilao dường sư vạn hạnh  
+	+ link tele:  https://www.instagram.com/longnguyen511074/ => link thread: https://www.threads.net/@longnguyen511074?xmt=AQGz6p0Se2BEIx_g6CppJ7YlBVZB9OZVYmbF2n_YNDc0QJc => quán buffet  hoàng yến thông qua gg len => https://www.google.com/maps/place/Ho%C3%A0ng+Y%E1%BA%BFn+Buffet/@10.770037,106.668604,19z/data=!4m16!1m7!3m6!1s0x31752f85b3a27d97:0xcca75ffce1a4a068!2zSG_DoG5nIFnhur9uIEJ1ZmZldA!8m2!3d10.770037!4d106.6692477!16s%2Fg%2F11l48s9ysv!3m7!1s0x31752f85b3a27d97:0xcca75ffce1a4a068!8m2!3d10.770037!4d106.6692477!9m1!1b1!16s%2Fg%2F11l48s9ysv?hl=vi-VN&entry=ttu => link mega: https://mega.nz/file/AhtQwaiQ#55y8QB1Bz09APoBi-esxkWMrqiVXGJUNs-aMqdqCxcY và 1 link google. 
+=> ở giây thứ 20 ta ra được bot trên tele
+	+ Con bot: https://web.telegram.org/k/#@CGV_KCSC_bot, con bot gửi cho ta 1 link dạng: https://d******.**/psGcaAgB, đó là link discord.gg, bot tên: tsug1kuni_y0riichi_02536, ngoài ra con bot cgv cho ta 1 link GitHub của zsteg: https://github.com/zed-0xff/zsteg => có 1 thứ gì đó hidden trong ảnh, chú y dến cái anh bot cgv gửi, ta lên: https://stylesuxx.github.io/steganography/, và nhận được 1 link: https://x.com/LongNguyen54700
+	+ Server discord: https://discord.gg/psGcaAgB, ở phần ngoại tuyến ta có 1 bot tên flag part 1, đó là 1 link spotify
+	+ Link nhạc: https://open.spotify.com/playlist/7f1BCeuGS5AQu9dHU6xPj6, để ý chữ cái dau cua tung bài nhạc, ta có: KCSC{CHUC_MUNG_SINH_NHAT , khả năng rất cao đây là part 1 của flag.
+	+ Link X: https://x.com/LongNguyen54700, có gắn link GitHub, ta tìm đc tin nhắn: Tôi đã che dấu tên ingame TFT của mình bằng một thuật toán mã hóa đối xứng, và tin nhắn tại: https://x.com/NguyenKhoa51985/with_replies với thông tin: 900f0d077edca1b364ac519d90bc1348d58a2d6ca319712f79d4b54d5be2955f (Ngân Hàng TFT)
+	+ Link GitHub: https://github.com/L0ng-nguY3n-470115, ta có đc code giải mã aes, check commit ta có key là: 48347070595f42495274685f44615959 và iv=4b4353434b4353434b4353434b435343 đem lên cyberchef nấu ra dc username: Ingame: nonono#9800, vậy là ta có ingame tft.
+	+ Check lịch sử đấu tft: https://tftplus.org/vi/profile/vn/ODIwMjQ0MjAyODh9%230808, ta để ý tài khoản đấu duy nhất 1 trận, 3 tài khoản top cuối có thể là mã base 64: X0tDU0M8bTQxX0Qxbkg8MzMzMz5fMHg4ODIwMjQ0MjAyODh9, và base64 decode ta được part cuối của flag: _KCSC<m41_D1nH<3333>_0x882024420288}
+   => Vậy flag sẽ là: KCSC{CHUC_MUNG_SINH_NHAT_KCSC<m41_D1nH<3333>_0x882024420288}

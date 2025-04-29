@@ -1,0 +1,11 @@
+kma:
+https://www.youtube.com/@freakyahhheckar/playlists?view=1&sort=lad&flow=grid
+Ở link youtube này, click vào xem toàn bộ danh sách ta sẽ thấy bio: o11Ao11A, đó là pass pastebin thứ nhất
+https://github.com/FreakyAhhHeckar/cstealer/commit/c83d494b826b27091e74c8b1135a55d86f603d88
+https://www.instagram.com/freakyahhheckar/
+https://x.com/FreakyAhhHeckar
+https://pastebin.com/u/FreakyAhhHeckar: từ X ta có link pastebin trên
+https://www.youtube.com/watch?v=GLEdimSqSVg: từ pastebin thứ nhất
+Thông qua video, ta có gợi ý RC4, dung đoạn mã giải mã ta có
+https://mega.nz/file/JoZXmJgK#Xjk2ozTQY3tQmifutRZ8Q5mvjBbkJrTeqeBr2yMbybU
+từ đây ta có flag: KCSC{W3_W15H_U_4_M3RRY_CHR1S7M45_4ND_4_H4PPY_N3W_Y34R}
