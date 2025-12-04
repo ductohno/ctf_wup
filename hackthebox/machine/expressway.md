@@ -1,4 +1,3 @@
-## HackTheBox – Expressway Writeup
 
 ### 1. TCP Scan – Thu thập port TCP
 Sử dụng Nmap để quét các port TCP:
@@ -77,10 +76,6 @@ ssh ike@10.10.11.87
 ```
 
 Nhận user flag:
-
-```
-7b7090b488ca012a49499519ba0200cc
-```
 
 ---
 
